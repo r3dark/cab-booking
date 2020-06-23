@@ -2,13 +2,13 @@ package com.example.cabSelection.exception;
 
 import org.springframework.http.HttpStatus;
 
-public class CabBookingException extends Exception {
+public class CabSelectionException extends Exception {
 
 	private String message;
 
 	private HttpStatus code;
 
-	public CabBookingException(String message, HttpStatus code) {
+	public CabSelectionException(String message, HttpStatus code) {
 		this.message = message;
 		this.code = code;
 	}

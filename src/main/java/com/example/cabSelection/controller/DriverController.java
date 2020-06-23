@@ -13,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
 @Slf4j
 public class DriverController {
 
@@ -21,8 +20,8 @@ public class DriverController {
     DriverService driverService;
 
     @GetMapping("/")
-    @ApiOperation("This is the Cab booking platform")
-    public String hello() {
+    @ApiOperation("This is the Cab selection platform")
+    public String cabSelection() {
         return "Book cabs now!!";
     }
 
